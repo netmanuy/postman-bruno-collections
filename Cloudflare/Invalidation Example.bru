@@ -1,0 +1,19 @@
+meta {
+  name: Invalidation Example
+  type: http
+  seq: 2
+}
+
+post {
+  url: https://api.cloudflare.com/client/v4/zones/1092fbf5c2193c811aeb6a0750a37bcb/purge_cache
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: 7sTVBnVDcVWxdeGb33oE9UZdDpr0ThIkm6RwQKQL
+}
+
+body:json {
+  {"prefixes": ["i.msg01.eccmp.com/wpm/370/JoseTestUploads/oe-statement.jpeg"]}
+}
