@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "Cheetah Endpoints",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
