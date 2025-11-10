@@ -1,0 +1,20 @@
+meta {
+  name: WAF Prod
+  type: http
+  seq: 7
+}
+
+get {
+  url: https://api.cloudflare.com/client/v4/zones/e24c6da89ce2b13f74b0ba1d0fcf913c/environments
+  body: none
+  auth: inherit
+}
+
+headers {
+  X-Auth-Email: sdelgado@campaignmonitor.com
+  X-Auth-Key: e8225e52c6f26e7268dad7392d8e9b6cbb967
+}
+
+settings {
+  encodeUrl: true
+}

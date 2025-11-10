@@ -1,0 +1,20 @@
+meta {
+  name: WAF Lower
+  type: http
+  seq: 5
+}
+
+get {
+  url: https://api.cloudflare.com/client/v4/zones/4ee9cb2f02a317ca5f8055994cb2394f/environments
+  body: none
+  auth: inherit
+}
+
+headers {
+  X-Auth-Email: sdelgado@campaignmonitor.com
+  X-Auth-Key: e8225e52c6f26e7268dad7392d8e9b6cbb967
+}
+
+settings {
+  encodeUrl: true
+}

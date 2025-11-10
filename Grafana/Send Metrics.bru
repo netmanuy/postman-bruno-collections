@@ -1,0 +1,20 @@
+meta {
+  name: Send Metrics
+  type: http
+  seq: 1
+}
+
+post {
+  url: https://prometheus-prod-13-prod-us-east-0.grafana.net/api/v1/push/influx/write
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: 1156948
+  password: glc_eyJvIjoiODI5ODczIiwibiI6InN0YWNrLTcyNDUxNC1obS13cml0ZS1jaG0td2FsZ3JlZW5zIiwiayI6IjZrazVSbjNsMzM0MGNMRjJZUjVXUzJxZCIsIm0iOnsiciI6InByb2QtdXMtZWFzdC0wIn19
+}
+
+settings {
+  encodeUrl: true
+}

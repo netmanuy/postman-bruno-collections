@@ -1,0 +1,25 @@
+meta {
+  name: API POC
+  type: http
+  seq: 16
+}
+
+post {
+  url: https://api.eccmp.com/services2/authorization/oauth2/token
+  body: formUrlEncoded
+  auth: inherit
+}
+
+headers {
+  Content-Type: application/x-www-form-urlencoded
+}
+
+body:form-urlencoded {
+  grant_type: password
+  username: ODY2MzoxMDA=
+  password: fa6963791e4a49b796e2ece2044bbe2a
+}
+
+body:multipart-form {
+  grant_type: password
+}
